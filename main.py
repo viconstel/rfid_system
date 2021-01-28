@@ -12,6 +12,7 @@ DATAFRAME_PATH = './data_with_big_url.pkl'
 WRAPPER = '<span style="font-size:1.5em">{0}</span>'
 BREAK = '<br>'
 ROWS, COLS = 4, 5
+IMAGE_SIZE = 256, 256
 
 
 class Model:
@@ -42,7 +43,7 @@ class Model:
 @st.cache
 def get_image(url):
     im = Image.fromarray(imread(url))
-    im = im.resize((128, 128), Image.ANTIALIAS)
+    im = im.resize(IMAGE_SIZE, Image.ANTIALIAS)
     return im
 
 
