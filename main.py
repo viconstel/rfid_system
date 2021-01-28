@@ -90,7 +90,7 @@ def main():
                 with st.beta_expander('See options', expanded=False):
                     st.write(f'**Title:** {title}')
                     st.write(f'**Brand:** {brand}')
-                    st.write(f'**Type:** {cat}')
+                    st.write(f'**Type:** {radio}')
                     st.write(f'**Color:** {color}')
                     st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
@@ -105,7 +105,7 @@ def main():
                 with st.beta_expander('See options', expanded=False):
                     st.write(f'**Title:** {title}')
                     st.write(f'**Brand:** {brand}')
-                    st.write(f'**Type:** {cat}')
+                    st.write(f'**Type:** {radio}')
                     st.write(f'**Color:** {color}')
                     st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
@@ -120,7 +120,7 @@ def main():
                 with st.beta_expander('See options', expanded=False):
                     st.write(f'**Title:** {title}')
                     st.write(f'**Brand:** {brand}')
-                    st.write(f'**Type:** {cat}')
+                    st.write(f'**Type:** {radio}')
                     st.write(f'**Color:** {color}')
                     st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
@@ -135,7 +135,7 @@ def main():
                 with st.beta_expander('See options', expanded=False):
                     st.write(f'**Title:** {title}')
                     st.write(f'**Brand:** {brand}')
-                    st.write(f'**Type:** {cat}')
+                    st.write(f'**Type:** {radio}')
                     st.write(f'**Color:** {color}')
                     st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
@@ -150,7 +150,7 @@ def main():
                 with st.beta_expander('See options', expanded=False):
                     st.write(f'**Title:** {title}')
                     st.write(f'**Brand:** {brand}')
-                    st.write(f'**Type:** {cat}')
+                    st.write(f'**Type:** {radio}')
                     st.write(f'**Color:** {color}')
                     st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
@@ -170,6 +170,8 @@ def main():
 
                 with c1:
                     item = model.data.iloc[indices[0]]
+                    categ = item.product_type_name.split('_')
+                    categ = ' '.join([i[0] + i[1:].lower() for i in categ])
                     url = item.medium_image_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
@@ -177,11 +179,13 @@ def main():
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
-                        st.write(f'**Type:** {cat}')
+                        st.write(f'**Type:** {categ}')
                         st.write(f'**Color:** {color}')
                         st.write(f'**ASIN:** {asin}')
                 with c2:
                     item = model.data.iloc[indices[1]]
+                    categ = item.product_type_name.split('_')
+                    categ = ' '.join([i[0] + i[1:].lower() for i in categ])
                     url = item.medium_image_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
@@ -189,11 +193,13 @@ def main():
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
-                        st.write(f'**Type:** {cat}')
+                        st.write(f'**Type:** {categ}')
                         st.write(f'**Color:** {color}')
                         st.write(f'**ASIN:** {asin}')
                 with c3:
                     item = model.data.iloc[indices[2]]
+                    categ = item.product_type_name.split('_')
+                    categ = ' '.join([i[0] + i[1:].lower() for i in categ])
                     url = item.medium_image_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
@@ -201,11 +207,13 @@ def main():
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
-                        st.write(f'**Type:** {cat}')
+                        st.write(f'**Type:** {categ}')
                         st.write(f'**Color:** {color}')
                         st.write(f'**ASIN:** {asin}')
                 with c4:
                     item = model.data.iloc[indices[3]]
+                    categ = item.product_type_name.split('_')
+                    categ = ' '.join([i[0] + i[1:].lower() for i in categ])
                     url = item.medium_image_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
@@ -213,11 +221,13 @@ def main():
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
-                        st.write(f'**Type:** {cat}')
+                        st.write(f'**Type:** {categ}')
                         st.write(f'**Color:** {color}')
                         st.write(f'**ASIN:** {asin}')
                 with c5:
                     item = model.data.iloc[indices[4]]
+                    categ = item.product_type_name.split('_')
+                    categ = ' '.join([i[0] + i[1:].lower() for i in categ])
                     url = item.medium_image_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
@@ -225,7 +235,7 @@ def main():
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
-                        st.write(f'**Type:** {cat}')
+                        st.write(f'**Type:** {categ}')
                         st.write(f'**Color:** {color}')
                         st.write(f'**ASIN:** {asin}')
 
