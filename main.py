@@ -58,7 +58,7 @@ def main():
     local_css('./style.css')
     categories = ['Shirt', 'Accessory', 'Sporting Goods', 'Dress', 'Blazer',
                   'Sweater', 'Outerwear', 'Outdoor Recreation Product',
-                  'Underwear', 'Sleepwear']
+                  'Skirt', 'Sleepwear']
     radio = st.sidebar.radio('Select a section:', ['Home'] + categories)
 
     if radio == 'Home':
