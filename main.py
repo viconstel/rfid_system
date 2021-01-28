@@ -92,7 +92,7 @@ def main():
                     st.write(f'**Brand:** {brand}')
                     st.write(f'**Type:** {cat}')
                     st.write(f'**Color:** {color}')
-                    st.write(f'**Asin:** {asin}')
+                    st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
                 button = st.button('Select!', key=asin)
                 keys_dict[asin] = button
@@ -107,7 +107,7 @@ def main():
                     st.write(f'**Brand:** {brand}')
                     st.write(f'**Type:** {cat}')
                     st.write(f'**Color:** {color}')
-                    st.write(f'**Asin:** {asin}')
+                    st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
                 button = st.button('Select!', key=asin)
                 keys_dict[asin] = button
@@ -122,7 +122,7 @@ def main():
                     st.write(f'**Brand:** {brand}')
                     st.write(f'**Type:** {cat}')
                     st.write(f'**Color:** {color}')
-                    st.write(f'**Asin:** {asin}')
+                    st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
                 button = st.button('Select!', key=asin)
                 keys_dict[asin] = button
@@ -137,7 +137,7 @@ def main():
                     st.write(f'**Brand:** {brand}')
                     st.write(f'**Type:** {cat}')
                     st.write(f'**Color:** {color}')
-                    st.write(f'**Asin:** {asin}')
+                    st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
                 button = st.button('Select!', key=asin)
                 keys_dict[asin] = button
@@ -152,7 +152,7 @@ def main():
                     st.write(f'**Brand:** {brand}')
                     st.write(f'**Type:** {cat}')
                     st.write(f'**Color:** {color}')
-                    st.write(f'**Asin:** {asin}')
+                    st.write(f'**ASIN:** {asin}')
                 st.write(BREAK, unsafe_allow_html=True)
                 button = st.button('Select!', key=asin)
                 keys_dict[asin] = button
@@ -179,7 +179,7 @@ def main():
                         st.write(f'**Brand:** {brand}')
                         st.write(f'**Type:** {cat}')
                         st.write(f'**Color:** {color}')
-                        st.write(f'**Asin:** {asin}')
+                        st.write(f'**ASIN:** {asin}')
                 with c2:
                     item = model.data.iloc[indices[1]]
                     url = item.medium_image_url
@@ -191,7 +191,7 @@ def main():
                         st.write(f'**Brand:** {brand}')
                         st.write(f'**Type:** {cat}')
                         st.write(f'**Color:** {color}')
-                        st.write(f'**Asin:** {asin}')
+                        st.write(f'**ASIN:** {asin}')
                 with c3:
                     item = model.data.iloc[indices[2]]
                     url = item.medium_image_url
@@ -203,7 +203,7 @@ def main():
                         st.write(f'**Brand:** {brand}')
                         st.write(f'**Type:** {cat}')
                         st.write(f'**Color:** {color}')
-                        st.write(f'**Asin:** {asin}')
+                        st.write(f'**ASIN:** {asin}')
                 with c4:
                     item = model.data.iloc[indices[3]]
                     url = item.medium_image_url
@@ -215,7 +215,7 @@ def main():
                         st.write(f'**Brand:** {brand}')
                         st.write(f'**Type:** {cat}')
                         st.write(f'**Color:** {color}')
-                        st.write(f'**Asin:** {asin}')
+                        st.write(f'**ASIN:** {asin}')
                 with c5:
                     item = model.data.iloc[indices[4]]
                     url = item.medium_image_url
@@ -227,7 +227,7 @@ def main():
                         st.write(f'**Brand:** {brand}')
                         st.write(f'**Type:** {cat}')
                         st.write(f'**Color:** {color}')
-                        st.write(f'**Asin:** {asin}')
+                        st.write(f'**ASIN:** {asin}')
 
 
 if __name__ == '__main__':
