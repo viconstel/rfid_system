@@ -176,7 +176,10 @@ def main():
                     url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
-                    st.image(get_image(url), use_column_width=True)
+                    try:
+                        st.image(get_image(url), use_column_width=True)
+                    except:
+                        st.markdown('# NO PHOTO FOUND')
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
@@ -190,7 +193,11 @@ def main():
                     url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
-                    st.image(get_image(url), use_column_width=True)
+                    try:
+                        st.image(get_image(url), use_column_width=True)
+                    except:
+                        st.markdown('# NO PHOTO FOUND')
+
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
@@ -204,7 +211,10 @@ def main():
                     url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
-                    st.image(get_image(url), use_column_width=True)
+                    try:
+                        st.image(get_image(url), use_column_width=True)
+                    except:
+                        st.markdown('# NO PHOTO FOUND')
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
@@ -218,7 +228,10 @@ def main():
                     url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
-                    st.image(get_image(url), use_column_width=True)
+                    try:
+                        st.image(get_image(url), use_column_width=True)
+                    except:
+                        st.markdown('# NO PHOTO FOUND')
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
@@ -232,7 +245,10 @@ def main():
                     url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
-                    st.image(get_image(url), use_column_width=True)
+                    try:
+                        st.image(get_image(url), use_column_width=True)
+                    except:
+                        st.markdown('# NO PHOTO FOUND')
                     with st.beta_expander('See options', expanded=False):
                         st.write(f'**Title:** {title}')
                         st.write(f'**Brand:** {brand}')
