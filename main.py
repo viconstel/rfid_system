@@ -8,7 +8,7 @@ from imageio import imread
 
 
 VECTORIZER_PATH = './title_vectorizer.pkl'
-DATAFRAME_PATH = './16k_apparel_data_preprocessed.pkl'
+DATAFRAME_PATH = './data_with_big_url.pkl'
 WRAPPER = '<span style="font-size:1.5em">{0}</span>'
 BREAK = '<br>'
 ROWS, COLS = 4, 5
@@ -83,7 +83,7 @@ def main():
 
             with c1:
                 item = items.iloc[i * COLS, :]
-                url = item.medium_image_url
+                url = item.big_url
                 title = item.old_title
                 brand, asin, color = item.brand, item.asin, item.color
                 st.image(get_image(url), use_column_width=True)
@@ -98,7 +98,7 @@ def main():
                 keys_dict[asin] = button
             with c2:
                 item = items.iloc[i * COLS + 1, :]
-                url = item.medium_image_url
+                url = item.big_url
                 title = item.old_title
                 brand, asin, color = item.brand, item.asin, item.color
                 st.image(get_image(url), use_column_width=True)
@@ -113,7 +113,7 @@ def main():
                 keys_dict[asin] = button
             with c3:
                 item = items.iloc[i * COLS + 2, :]
-                url = item.medium_image_url
+                url = item.big_url
                 title = item.old_title
                 brand, asin, color = item.brand, item.asin, item.color
                 st.image(get_image(url), use_column_width=True)
@@ -128,7 +128,7 @@ def main():
                 keys_dict[asin] = button
             with c4:
                 item = items.iloc[i * COLS + 3, :]
-                url = item.medium_image_url
+                url = item.big_url
                 title = item.old_title
                 brand, asin, color = item.brand, item.asin, item.color
                 st.image(get_image(url), use_column_width=True)
@@ -143,7 +143,7 @@ def main():
                 keys_dict[asin] = button
             with c5:
                 item = items.iloc[i * COLS + 4, :]
-                url = item.medium_image_url
+                url = item.big_url
                 title = item.old_title
                 brand, asin, color = item.brand, item.asin, item.color
                 st.image(get_image(url), use_column_width=True)
@@ -172,7 +172,7 @@ def main():
                     item = model.data.iloc[indices[0]]
                     categ = item.product_type_name.split('_')
                     categ = ' '.join([i[0] + i[1:].lower() for i in categ])
-                    url = item.medium_image_url
+                    url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
                     st.image(get_image(url), use_column_width=True)
@@ -186,7 +186,7 @@ def main():
                     item = model.data.iloc[indices[1]]
                     categ = item.product_type_name.split('_')
                     categ = ' '.join([i[0] + i[1:].lower() for i in categ])
-                    url = item.medium_image_url
+                    url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
                     st.image(get_image(url), use_column_width=True)
@@ -200,7 +200,7 @@ def main():
                     item = model.data.iloc[indices[2]]
                     categ = item.product_type_name.split('_')
                     categ = ' '.join([i[0] + i[1:].lower() for i in categ])
-                    url = item.medium_image_url
+                    url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
                     st.image(get_image(url), use_column_width=True)
@@ -214,7 +214,7 @@ def main():
                     item = model.data.iloc[indices[3]]
                     categ = item.product_type_name.split('_')
                     categ = ' '.join([i[0] + i[1:].lower() for i in categ])
-                    url = item.medium_image_url
+                    url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
                     st.image(get_image(url), use_column_width=True)
@@ -228,7 +228,7 @@ def main():
                     item = model.data.iloc[indices[4]]
                     categ = item.product_type_name.split('_')
                     categ = ' '.join([i[0] + i[1:].lower() for i in categ])
-                    url = item.medium_image_url
+                    url = item.big_url
                     title = item.old_title
                     brand, asin, color = item.brand, item.asin, item.color
                     st.image(get_image(url), use_column_width=True)
